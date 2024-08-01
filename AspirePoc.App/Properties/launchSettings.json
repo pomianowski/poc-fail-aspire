@@ -1,0 +1,17 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "Local Service": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "hotReloadEnabled": true,
+      "dotnetRunMessages": true,
+      "launchUrl": "http://localhost:7481/healthz",
+      "applicationUrl": "http://localhost:7481",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EVENT_LOG_ATTRIBUTES": "true"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <OutputType>Exe</OutputType>
+        <IsAspireHost>true</IsAspireHost>
+        <UserSecretsId>72844ea2-4748-4d7f-bcd5-93532290975c</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.2" />
+        <PackageReference Include="Aspire.Hosting.MongoDB" Version="8.0.2" />
+        <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="8.0.2" />
+        <PackageReference Include="Aspire.Hosting.RabbitMQ" Version="8.0.2" />
+        <PackageReference Include="Aspire.Hosting.Redis" Version="8.0.2" />
+        <PackageReference Include="AspNetCore.HealthChecks.MongoDb" Version="8.0.1" />
+        <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="8.0.1" />
+        <PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" Version="8.0.1" />
+        <PackageReference Include="AspNetCore.HealthChecks.Redis" Version="8.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AspirePoc.App\AspirePoc.App.csproj" />
+    </ItemGroup>
+
+</Project>
